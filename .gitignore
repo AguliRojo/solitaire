@@ -1,1 +1,8 @@
+__pycache__
+.ipynb_checkpoints
+
+# config files
+config.py
+main_script.py
+gitpush.sh
 .idea
