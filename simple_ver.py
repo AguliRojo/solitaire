@@ -1,4 +1,8 @@
 import random
+# def card():
+#   pass
+# TODO: More card piles, proper card stacking
+
 cards = ["A","2","3","4","5","6","7","8","9","10","J","Q","K"]
 deck_pile = cards
 random.shuffle(deck_pile)
@@ -23,6 +27,12 @@ while game:
       continue
     if bread=="2":
       print("To which pile? (1-7)")
+      piles[0].append(deck_pile[0])
+      deck_pile.pop(0)
+      print(f'Cards left: {len(deck_pile)}')
       # if piles[[-1]]  # card stacking
     else:
       print(f'which moron picked {bread}')
+    if piles[0] == "A" or len(deck_pile) == 0:
+      print("You won")
+      break
